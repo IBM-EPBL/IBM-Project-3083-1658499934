@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Car Resale Value Prediction
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+         .container{
+             font-style: italic;
+         }
+         @media(min-width:1100px){
+            #img{
+            height: 80vh;
+            animation:moveit 1s;
+            border-radius: 10px;
+        }
+        @keyframes moveit{
+            from{margin-left:8vw;}
+            to{margin-left:0vw;}
+        }
+        .text{
+            margin-top:17.1vh;
+            animation:mymove 1s;
+        }
+        @keyframes mymove{
+              from{margin-top:10vh;}
+              to{margin-top:17.1vh;}
+            
+        }
+            }
+
+        #img{
+            height: 80vh;
+            border-radius: 10px;
+        }
+        .fa{
+            width:20px;
+            color:white;
+        }
+        .text{
+            margin-top:17vh;
+        }
+        .btn{
+            border-radius: 8px;
+            font-style: italic;
+        }
+        h1{
+            color: rgba(13, 185, 122, 0.758);
+        }
+        @media (max-width:500px){
+            .text{
+            margin-top:6vh;
+        } 
+        h1{
+            font-size:x-large;
+        }
+        }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="row mb-4">
+        <div class="col-md-5 text">
+          <h1>Get The Accurate Value of Your Car</h1><br>
+          <p class="mr-4">With difficult economic conditions, it is likely that sales of second-hand imported cars and used cars will increase. In many developed countries, 
+            it is common to lease a car rather than buying it outright.A lease is a binding contract between a buyer and a seller in which the buyer must pay fixed
+             instalments for a pre-defined number of month / year to the seller . After the lease period is over , the buyer has the possibility to buy the car at its 
+             residual value . Thus , this application is of commercial interset to seller to be able to predict the residual value of car with accuracy.</p>
+             <form action="/predict">
+             <button class="btn btn-success mt-4" href="/predict"><span class="ml-4 mr-2">Find the resale of your car</span><i class="fa fa-long-arrow-right mr-4"></i></button>
+       </form>
+            </div>
+        <div class="col-md-7 mt-5">
+                <img src="../static/Images/car_2.jpg" id="img" class="w-100">
+        </div>
+      </div>
+      </div>
+</body>
+</html>
