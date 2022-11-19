@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Car Resale Value Prediction
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </head>
+        <style>
+            .container{
+                margin-top:35vh;
+                height:250px;
+                width:300px;
+                background-color: rgba(13, 185, 122, 0.719);
+                animation:moveit 1s;
+                border-radius: 8px;
+            }
+            h5{
+                padding-top: 73px;
+                font-style: italic;
+            }
+        @keyframes moveit{
+            from{margin-top:28vh;}
+            to{margin-top:35vh;}
+        }
+        .btn{
+            font-style: italic;
+        }
+        </style>
+        <body>
+            <div class="container shadow text-center">
+              <h5>{{ypred}}</h5>
+              <form action="/">
+                <button class="btn btn-dark mt-4"><span class="mx-3">
+                    Back to Home</button>
+          </form>
+            </div>
+        </body>
